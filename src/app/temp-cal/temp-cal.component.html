@@ -1,0 +1,40 @@
+<table id="temp-cal"> 
+    <tr> 
+        <td colspan="3"> 
+            <input type="text" id="temp-result" [(ngModel)]="inputTemp" name="temptable"> 
+        </td> 
+        
+    </tr> 
+
+    <tr> 
+        <td><button mat-fab (click)="tempClick('1')">1</button></td> 
+        <td><button mat-fab (click)="tempClick('2')">2</button></td> 
+        <td><button mat-fab (click)="tempClick('3')">3</button></td> 
+ 
+    </tr> 
+    <tr> 
+        <td><button mat-fab (click)="tempClick('4')">4</button></td> 
+        <td><button mat-fab (click)="tempClick('5')">5</button></td> 
+        <td><button mat-fab (click)="tempClick('6')">6</button></td> 
+
+    </tr> 
+    <tr> 
+        <td><button mat-fab (click)="tempClick('7')">7</button></td> 
+        <td><button mat-fab (click)="tempClick('8')">8</button></td> 
+        <td><button mat-fab (click)="tempClick('9')">9</button></td> 
+
+    </tr> 
+    <tr> 
+        <td><button mat-fab (click)="tempClick('0')">0</button></td> 
+        <td><button mat-fab (click)="tempClick('.')">.</button></td> 
+        <td><button mat-fab (click)="tempClick('Del')">Del</button></td>
+
+    </tr> 
+    <tr> 
+        <td><button mat-fab id="computeBtn" (click)="tempClick('C->F')">C -> F</button></td> 
+        <td><button mat-fab id="computeBtn" (click)="tempClick('F->C')">F -> C</button></td> 
+        <td><button mat-fab id="convertBtn" (click)="tempClick('RESET')">RESET</button></td> 
+
+    </tr> 
+
+</table>

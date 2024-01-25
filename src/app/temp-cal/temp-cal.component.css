@@ -1,0 +1,34 @@
+#temp-result{
+    width: 95%;
+    background-color: rgb(50, 211, 223);
+
+    height: 45px;
+}
+#temp-cal button{
+    border-radius: 10px;
+
+}
+
+#convertBtn{
+    background-color: orange;
+}
+#computeBtn{
+    background-color: greenyellow;
+}
+
+#temp-cal {
+    margin: auto; /* Center the table horizontally */
+  }
+  
+  /* If you want to center the content inside the table cells */
+  #temp-cal td {
+    text-align: center;
+  }
+  
+  /* Optional: Center the table vertically and horizontally */
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust as needed */
+  }

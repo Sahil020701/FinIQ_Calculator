@@ -1,0 +1,21 @@
+mat-toolbar{
+    margin-bottom: 1rem;
+}
+
+
+#toolbar{
+    background-color: rgb(49, 114, 211);
+    /* background-color: rgb(245, 156, 22); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+
+}

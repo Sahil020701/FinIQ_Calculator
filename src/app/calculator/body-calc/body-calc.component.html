@@ -1,0 +1,49 @@
+<div class="calculator-container">
+<table id="calcu"> 
+    <tr> 
+        <td colspan="3"> 
+            
+            <input type="text" id="result" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" [(ngModel)]="inputText"> 
+        </td> 
+        <td><button mat-fab id="cbutton" (click)="onButtonClick('C')">C</button></td> 
+    </tr> 
+
+    <tr> 
+        <td><button mat-fab (click)="onButtonClick('1')">1</button></td> 
+        <td><button mat-fab (click)="onButtonClick('2')">2</button></td> 
+        <td><button mat-fab (click)="onButtonClick('3')">3</button></td> 
+        <td><button mat-fab (click)="onButtonClick('/')">/</button></td> 
+    </tr> 
+    <tr> 
+        <td><button mat-fab (click)="onButtonClick('4')">4</button></td> 
+        <td><button mat-fab (click)="onButtonClick('5')">5</button></td> 
+        <td><button mat-fab (click)="onButtonClick('6')">6</button></td> 
+        <td><button mat-fab (click)="onButtonClick('*')">*</button></td> 
+    </tr> 
+    <tr> 
+        <td><button mat-fab (click)="onButtonClick('7')">7</button></td> 
+        <td><button mat-fab (click)="onButtonClick('8')">8</button></td> 
+        <td><button mat-fab (click)="onButtonClick('9')">9</button></td> 
+        <td><button mat-fab (click)="onButtonClick('-')">-</button></td> 
+    </tr> 
+    <tr> 
+        <td><button mat-fab (click)="onButtonClick('0')">0</button></td> 
+        <td><button mat-fab (click)="onButtonClick('.')">.</button></td> 
+        <td><button id="computebtn" mat-fab (click)="onButtonClick('=')">=</button></td> 
+        <td><button mat-fab (click)="onButtonClick('+')">+</button></td> 
+    </tr> 
+    <tr> 
+        <td><button mat-fab (click)="onButtonClick('00')">00</button></td> 
+        <td><button mat-fab (click)="onButtonClick('Del')">Del</button></td> 
+        <td><button mat-fab (click)="onButtonClick('&#40;')">&#40;</button></td>
+        <td><button mat-fab (click)="onButtonClick('&#41;')">&#41;</button></td>
+
+    </tr> 
+</table>
+
+
+<div class="history">
+    <label>Calculation History:</label>
+    <textarea [(ngModel)]="calculationHistory" readonly></textarea>
+  </div>
+</div>

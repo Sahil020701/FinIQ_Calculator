@@ -1,0 +1,39 @@
+<div class="calc-field">
+  <mat-form-field>
+    <mat-label>Amount</mat-label>
+    <input
+      matInput
+      [(ngModel)]="inputAmount"
+      placeholder="Enter amount"
+      type="number"
+    />
+  </mat-form-field>
+  
+  <mat-form-field>
+      <mat-label>Primary Currency</mat-label>
+      <mat-select [(ngModel)]="primaryInput">
+        <mat-option *ngFor="let currency of arr" [value]="currency">
+          {{ currency }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+  <mat-form-field>
+    <mat-label>Target Currency</mat-label>
+    <mat-select [(ngModel)]="targetInput">
+      <mat-option *ngFor="let currency of arr" [value]="currency">
+        {{ currency }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" (click)="convert()">Convert</button>
+  
+</div>
+
+<div *ngIf="result !== null" class="result">
+  <p>
+    {{ inputAmount }} {{ primaryInput }} is equal to
+    {{ result | number : "1.2-2" }} {{ targetInput }}
+  </p>
+</div>

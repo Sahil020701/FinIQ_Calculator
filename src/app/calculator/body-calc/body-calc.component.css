@@ -1,0 +1,72 @@
+/* #result{
+    width: 95%;
+    background-color: rgb(50, 211, 223);
+
+    height: 45px;
+}
+
+#calcu button{
+    border-radius: 10px;
+
+}
+
+#cbutton{
+    background-color: greenyellow;
+}
+#computebtn{
+    background-color: orange;
+} */
+
+/* #calcu {
+    margin: auto; 
+  } */
+  
+  /* If you want to center the content inside the table cells */
+  /* #calcu td {
+    text-align: center;
+  } */
+  
+ 
+  /* div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   } */ 
+   #result{
+    width: 95%;
+    background-color: rgb(50, 211, 223);
+
+    height: 45px;
+}
+  .calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #calcu {
+    margin: auto; 
+   
+  }
+
+  #cbutton{
+    background-color: greenyellow;
+}
+  #calcu td {
+    text-align: center;
+  }
+  #computebtn{
+    background-color: orange;
+}
+  .history {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+  }
