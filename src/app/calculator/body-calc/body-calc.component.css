@@ -43,12 +43,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 20px;
   }
   
   #calcu {
     margin: auto; 
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   #cbutton{
@@ -69,4 +73,9 @@
     width: 100%;
     height: 100px;
     resize: none;
+  }
+
+  #lastrow>*{
+    text-align: center;
+  vertical-align: middle;
   }
