@@ -34,24 +34,7 @@ export class BodyCalcComponent {
       if (key === "Backspace"){
         key = 'Del'
       }
-      if (key === "+"){
-        key = '+'
-      }
-      if (key === "-"){
-        key = '-'
-      }
-      if (key === "("){
-        key = '('
-      }
-      if (key === ")"){
-        key = ')'
-      }
-      if (key === "/"){
-        key = '/'
-      }
-      if (key === "."){
-        key = '.'
-      }
+    
 
       this.onButtonClick(key);
     }
@@ -182,9 +165,3 @@ export class BodyCalcComponent {
     }
   }
 }
-
-
-  // isFloat(value) {
-  //   const floatRegex = /^-?\d+(\.\d+)?$/;
-  //   return floatRegex.test(value);
-  // }
